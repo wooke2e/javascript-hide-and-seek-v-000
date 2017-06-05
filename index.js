@@ -11,16 +11,15 @@ function nestedTarget(){
 function deepestChild(){
   let current = document.querySelector('div#grand-node');
   let child = current.querySelector('div');
-
   while (child){
     current = child;
-    current.querySelector('div');
-
+    child = current.querySelector('div');
   }
-
+  return current
 }
 
 
+//use .firstchild
 // function deepestChild(){
 //   let lis = document.querySelectorAll('div#grand-node')
 //

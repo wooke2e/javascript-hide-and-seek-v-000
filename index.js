@@ -8,11 +8,30 @@ function nestedTarget(){
   return lis
 }
 
-function deepestChild(n){
-  
+function deepestChild(){
+  let current = document.querySelector('div#grand-node');
+  let child = current.querySelector('div');
 
+  while (child){
+    current = child;
+    current.querySelector('div');
+
+  }
 
 }
+
+
+// function deepestChild(){
+//   let lis = document.querySelectorAll('div#grand-node')
+//
+//   while (lis[0].children === []){
+//     if(lis[0].children === []){
+//       return lis[0].innerHTML
+//     } else {
+//       lis = lis[0].children
+//     }
+//   }
+// }
 
 function increaseRankBy(n){
   const lis = document.querySelectorAll('ul.ranked-list')
